@@ -396,6 +396,7 @@ section {
 
 .project-link-media-contain {
   object-fit: contain;
+  object-position: center center;
   background: #f8f8f8;
 }
 
