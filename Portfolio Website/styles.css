@@ -246,8 +246,7 @@ a {
 .contact-card p,
 .project-meta p,
 figcaption,
-.card-intro,
-.availability {
+.card-intro {
   color: var(--muted);
   line-height: 1.75;
 }
@@ -298,7 +297,7 @@ figcaption,
 
 .hero-highlights {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 14px;
   margin-top: 32px;
 }
@@ -324,7 +323,7 @@ figcaption,
 }
 
 .hero-card {
-  align-self: end;
+  align-self: start;
   padding: 30px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 250, 242, 0.94)),
@@ -335,18 +334,6 @@ figcaption,
 
 .card-intro {
   margin-top: 12px;
-}
-
-.focus-list {
-  margin: 18px 0 0;
-  padding-left: 18px;
-  line-height: 1.95;
-}
-
-.availability {
-  margin: 24px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid rgba(18, 18, 18, 0.08);
 }
 
 section {
