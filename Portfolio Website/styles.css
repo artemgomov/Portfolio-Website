@@ -178,6 +178,12 @@ a {
     "highlights highlights";
   gap: 28px;
   padding: 52px;
+  background:
+    linear-gradient(180deg, rgba(255, 250, 242, 0.2), rgba(255, 250, 242, 0.32)),
+    linear-gradient(90deg, rgba(255, 250, 242, 0.32), rgba(255, 250, 242, 0.08)),
+    url("assets/images/hero-banner.png");
+  background-size: 86%;
+  background-position: center 22%;
   isolation: isolate;
 }
 
@@ -201,6 +207,14 @@ a {
 
 .hero-copy {
   grid-area: copy;
+  overflow: hidden;
+  padding: 26px 28px;
+  min-height: 260px;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 250, 242, 0.26);
+  backdrop-filter: blur(3px);
+  box-shadow: var(--shadow-soft);
 }
 
 .hero-card {
@@ -340,9 +354,8 @@ figcaption,
 .hero-card {
   align-self: start;
   padding: 30px 22px;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(255, 250, 242, 0.94)),
-    var(--panel-strong);
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
   border: 1px solid rgba(18, 18, 18, 0.08);
   box-shadow: var(--shadow-soft);
 }
@@ -549,6 +562,10 @@ figcaption strong {
     padding: 36px 28px;
   }
 
+  .hero-copy {
+    padding: 24px;
+  }
+
   .hero-highlights {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -632,6 +649,10 @@ figcaption strong {
   .contact-card,
   .hero {
     padding: 24px;
+  }
+
+  .hero-copy {
+    padding: 22px;
   }
 
   .resume-frame {
