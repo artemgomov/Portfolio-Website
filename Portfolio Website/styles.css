@@ -394,6 +394,11 @@ section {
   object-fit: cover;
 }
 
+.project-link-media-contain {
+  object-fit: contain;
+  background: #f8f8f8;
+}
+
 .project-link-body {
   padding: 18px;
 }
