@@ -154,7 +154,6 @@ a {
 }
 
 .hero,
-.about,
 .project-card,
 .contact-card {
   position: relative;
@@ -165,7 +164,6 @@ a {
 }
 
 .hero,
-.about,
 .project-card,
 .contact-card,
 .hero-card {
@@ -175,6 +173,9 @@ a {
 .hero {
   display: grid;
   grid-template-columns: 1.55fr 0.85fr;
+  grid-template-areas:
+    "copy card"
+    "highlights highlights";
   gap: 28px;
   padding: 52px;
   isolation: isolate;
@@ -196,6 +197,14 @@ a {
 .hero-card {
   position: relative;
   z-index: 1;
+}
+
+.hero-copy {
+  grid-area: copy;
+}
+
+.hero-card {
+  grid-area: card;
 }
 
 .hero-copy h1,
@@ -240,9 +249,14 @@ a {
   color: var(--soft);
 }
 
+.hero-copy .eyebrow {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
 .hero-text,
 .project-summary,
-.about-grid p,
 .contact-card p,
 .project-meta p,
 figcaption,
@@ -296,10 +310,11 @@ figcaption,
 }
 
 .hero-highlights {
+  grid-area: highlights;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 32px;
+  margin-top: 4px;
 }
 
 .highlight {
@@ -340,23 +355,15 @@ section {
   margin-top: 28px;
 }
 
-.about,
 .project-card,
 .contact-card {
   padding: 36px;
-}
-
-.about {
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 250, 242, 0.9)),
-    var(--panel);
 }
 
 .section-heading {
   margin-bottom: 22px;
 }
 
-.about-grid,
 .project-overview,
 .project-meta {
   display: grid;
@@ -434,7 +441,6 @@ figcaption strong {
 
 @media (max-width: 980px) {
   .hero,
-  .about-grid,
   .project-overview,
   .project-meta,
   .gallery {
@@ -442,6 +448,10 @@ figcaption strong {
   }
 
   .hero {
+    grid-template-areas:
+      "copy"
+      "card"
+      "highlights";
     padding: 36px 28px;
   }
 
@@ -520,7 +530,6 @@ figcaption strong {
     grid-template-columns: 1fr;
   }
 
-  .about,
   .project-card,
   .contact-card,
   .hero {
