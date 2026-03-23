@@ -355,6 +355,42 @@ section {
   margin-top: 28px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-link-card {
+  overflow: hidden;
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.52);
+  box-shadow: var(--shadow-soft);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.project-link-card:hover,
+.project-link-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.project-link-media {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.project-link-body {
+  padding: 18px;
+}
+
+.project-link-body h3 {
+  margin: 8px 0 0;
+  font-size: 1.3rem;
+  letter-spacing: -0.04em;
+}
+
 .project-card,
 .contact-card {
   padding: 36px;
@@ -439,6 +475,24 @@ figcaption strong {
   margin-top: 18px;
 }
 
+.project-page {
+  display: grid;
+  gap: 28px;
+}
+
+.project-page-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--soft);
+  font-weight: 700;
+}
+
+.project-page-back:hover,
+.project-page-back:focus-visible {
+  color: var(--text);
+}
+
 .resume-shell {
   width: min(calc(100% - 32px), 1100px);
   margin: 0 auto;
@@ -480,6 +534,7 @@ figcaption strong {
 
 @media (max-width: 980px) {
   .hero,
+  .projects-grid,
   .project-overview,
   .project-meta,
   .gallery {
