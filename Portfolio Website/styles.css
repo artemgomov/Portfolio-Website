@@ -477,12 +477,43 @@ section {
     var(--bg-strong);
 }
 
+.gallery-image-contain {
+  object-fit: contain;
+  object-position: center top;
+  background: #f8f8f8;
+}
+
+.gallery-image-lower {
+  object-position: center 28%;
+}
+
+.gallery-image-lower-soft {
+  object-position: center 33%;
+}
+
 .gallery-item-large {
   grid-column: span 2;
 }
 
 .gallery-item-large img {
   aspect-ratio: 16 / 9;
+}
+
+.gallery-item-tall img {
+  aspect-ratio: 4 / 5;
+}
+
+.gallery-masonry {
+  display: block;
+  column-count: 2;
+  column-gap: 18px;
+}
+
+.gallery-masonry .gallery-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 18px;
+  break-inside: avoid;
 }
 
 figcaption {
