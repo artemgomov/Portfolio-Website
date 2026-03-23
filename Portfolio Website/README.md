@@ -10,6 +10,7 @@ Create this folder:
 
 Then add your project photos using these filenames:
 
+- `profile-photo.jpg`
 - `project-01-01.jpg`
 - `project-01-02.jpg`
 - `project-01-03.jpg`
@@ -17,7 +18,7 @@ Then add your project photos using these filenames:
 - `project-01-05.jpg`
 - `project-01-06.jpg`
 
-The gallery in [`index.html`](/Users/artemgomov/Downloads/Codex/Portfolio Website/index.html) is already wired to those image paths.
+The header profile image and gallery in [`index.html`](/Users/artemgomov/Downloads/Codex/Portfolio Website/index.html) are already wired to those image paths.
 
 ## Customize
 
