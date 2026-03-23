@@ -439,6 +439,61 @@ figcaption strong {
   margin-top: 18px;
 }
 
+.resume-shell {
+  width: min(calc(100% - 32px), 1100px);
+  margin: 0 auto;
+  padding: 24px 0 72px;
+}
+
+.resume-page {
+  display: grid;
+  gap: 28px;
+}
+
+.resume-hero,
+.resume-viewer {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius-xl);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.resume-hero {
+  padding: 42px;
+}
+
+.resume-hero h1 {
+  margin: 0;
+  letter-spacing: -0.05em;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.resume-hero p {
+  max-width: 62ch;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.resume-viewer {
+  padding: 20px;
+}
+
+.resume-frame {
+  width: 100%;
+  min-height: 900px;
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.resume-fallback {
+  margin-top: 16px;
+  color: var(--soft);
+  font-weight: 600;
+}
+
 @media (max-width: 980px) {
   .hero,
   .project-overview,
@@ -453,6 +508,10 @@ figcaption strong {
       "card"
       "highlights";
     padding: 36px 28px;
+  }
+
+  .resume-hero {
+    padding: 32px 28px;
   }
 
   .hero-highlights {
@@ -530,9 +589,18 @@ figcaption strong {
     grid-template-columns: 1fr;
   }
 
+  .resume-hero,
+  .resume-viewer {
+    padding: 24px;
+  }
+
   .project-card,
   .contact-card,
   .hero {
     padding: 24px;
+  }
+
+  .resume-frame {
+    min-height: 620px;
   }
 }
