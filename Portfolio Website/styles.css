@@ -559,6 +559,18 @@ section {
   object-position: center 62%;
 }
 
+.gallery-image-lower-project-02 {
+  object-position: center 74%;
+}
+
+.gallery-image-cover-balanced {
+  object-position: center 44%;
+}
+
+.gallery-image-lower-project-02-cover {
+  object-position: center 64%;
+}
+
 .gallery-item-large {
   grid-column: span 2;
 }
@@ -577,6 +589,10 @@ section {
 
 .gallery-item-tall img {
   aspect-ratio: 4 / 5;
+}
+
+.gallery-item-portrait-tall img {
+  aspect-ratio: 4 / 6;
 }
 
 .gallery-masonry {
