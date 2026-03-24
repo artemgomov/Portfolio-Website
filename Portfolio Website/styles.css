@@ -478,6 +478,17 @@ section {
     var(--bg-strong);
 }
 
+.gallery-pdf-link {
+  display: block;
+}
+
+.gallery-pdf-thumbnail {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  background: #f8f8f8;
+}
+
 .gallery-image-contain {
   object-fit: contain;
   object-position: center top;
@@ -486,6 +497,10 @@ section {
 
 .gallery-image-lower {
   object-position: center 28%;
+}
+
+.gallery-image-lower-large {
+  object-position: center 42%;
 }
 
 .gallery-image-lower-soft {
@@ -498,6 +513,10 @@ section {
 
 .gallery-item-large img {
   aspect-ratio: 16 / 9;
+}
+
+.gallery-item-cover-tall img {
+  aspect-ratio: 16 / 12.5;
 }
 
 .gallery-item-tall img {
