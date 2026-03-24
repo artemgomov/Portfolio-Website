@@ -404,6 +404,10 @@ section {
   background: #f8f8f8;
 }
 
+.project-link-media-lower {
+  object-position: center 72%;
+}
+
 .project-link-body {
   padding: 18px;
 }
