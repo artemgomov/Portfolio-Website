@@ -279,6 +279,10 @@ figcaption,
   line-height: 1.75;
 }
 
+.project-meta p {
+  margin: 4px 0 0;
+}
+
 .hero-text {
   max-width: 62ch;
   font-size: 1.04rem;
@@ -432,7 +436,7 @@ section {
 
 .project-overview-side {
   display: grid;
-  gap: 18px;
+  gap: 10px;
 }
 
 .project-summary {
@@ -448,7 +452,7 @@ section {
 
 .project-meta-inline {
   margin: 0;
-  padding-top: 18px;
+  padding-top: 10px;
 }
 
 .gallery {
@@ -525,6 +529,14 @@ section {
   background: #f8f8f8;
 }
 
+.gallery-pdf-thumbnail-wide {
+  aspect-ratio: 17 / 12;
+}
+
+.gallery-item-landscape .gallery-pdf-thumbnail-wide {
+  aspect-ratio: 17 / 12;
+}
+
 .gallery-image-contain {
   object-fit: contain;
   object-position: center top;
@@ -541,6 +553,10 @@ section {
 
 .gallery-image-lower-soft {
   object-position: center 33%;
+}
+
+.gallery-image-raise-strong {
+  object-position: center 62%;
 }
 
 .gallery-item-large {
