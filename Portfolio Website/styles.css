@@ -595,6 +595,14 @@ section {
   aspect-ratio: 4 / 6;
 }
 
+.gallery-item-natural img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #f8f8f8;
+}
+
 .gallery-masonry {
   display: block;
   column-count: 2;
