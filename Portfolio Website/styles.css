@@ -482,6 +482,42 @@ section {
   display: block;
 }
 
+.gallery-pdf-card {
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  min-height: 100%;
+  aspect-ratio: 4 / 5;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(244, 239, 230, 0.9)),
+    var(--panel-strong);
+}
+
+.gallery-pdf-badge {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--panel-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gallery-pdf-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.gallery-pdf-subtitle {
+  color: var(--soft);
+  font-weight: 600;
+}
+
 .gallery-pdf-thumbnail {
   width: 100%;
   aspect-ratio: 4 / 5;
@@ -512,6 +548,10 @@ section {
 }
 
 .gallery-item-large img {
+  aspect-ratio: 16 / 9;
+}
+
+.gallery-item-landscape img {
   aspect-ratio: 16 / 9;
 }
 
