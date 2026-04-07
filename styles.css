@@ -675,6 +675,12 @@ figcaption strong {
   letter-spacing: -0.05em;
 }
 
+.presentation-subtitle {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
 .resume-viewer {
   position: relative;
   overflow: hidden;
